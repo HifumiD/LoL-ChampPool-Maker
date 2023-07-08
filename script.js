@@ -19,6 +19,13 @@ fetch(`https://ddragon.leagueoflegends.com/cdn/13.13.1/data/en_US/champion.json`
       imageElement.classList.add('champion-image');
       imageElement.id = championName; // Set a unique id for each image
 
+      // Replace Quinn with local image
+      if (championName.toLowerCase() === 'quinn') {
+        imageElement.src = 'quinn.png';
+      } else {
+        imageElement.src = `https://ddragon.leagueoflegends.com/cdn/13.13.1/img/champion/${champion.image.full}`;
+      }
+
       championImagesContainer.appendChild(imageElement);
 
       // Add drag event listeners
