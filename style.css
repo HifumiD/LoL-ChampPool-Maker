@@ -67,6 +67,20 @@
         margin: 10px;
     }
 
+    .saveButton{
+        color: rgb(255, 255, 255,0.5);
+        border-color: rgb(202, 202, 202);
+        text-align: center;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+       
+    }
+    .saveButton:hover{
+        cursor: pointer;
+        
+       
+    }
+
     
 
     #role{
