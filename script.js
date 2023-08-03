@@ -19,7 +19,7 @@ fetch(`https://ddragon.leagueoflegends.com/cdn/13.13.1/data/en_US/champion.json`
       imageElement.classList.add('champion-image');
       imageElement.id = championName; // Set a unique id for each image
 
-      // Replace Quinn with local image
+      // Replaces Quinn's original splashart with my local image
       if (championName.toLowerCase() === 'quinn') {
         imageElement.src = 'quinn.png';
       } else {
@@ -28,7 +28,7 @@ fetch(`https://ddragon.leagueoflegends.com/cdn/13.13.1/data/en_US/champion.json`
 
       championImagesContainer.appendChild(imageElement);
 
-      // Add drag event listeners
+      // Add drag event listeners to the images
       imageElement.addEventListener('dragstart', dragStart);
       imageElement.addEventListener('dragend', dragEnd);
     });
